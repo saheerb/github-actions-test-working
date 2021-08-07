@@ -1,0 +1,17 @@
+name: a workflow to test GitHub Action
+
+on:
+  pull_request:
+  push:
+
+jobs: 
+  test-job:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      -
+        name: test-step
+        run: |
+          set -e
+          echo "test"
